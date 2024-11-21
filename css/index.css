@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    background-color: #C0C0C0;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+header > h1{
+    font-size: 28px;
+    text-shadow: 2px 3px 2px #606060;
+}
+
+header > img {
+    width: 60px;
+    height: 60px;
+    padding: 0 15px 0 10px;
+}
+
+header > nav {
+    margin-left: auto;
+}
+
+header > nav a {
+    font-size: 16px;
+    margin-left: 10px;
+    border-bottom: 2px solid #606060;
+    padding: 5px;
+    transition: font-size 0.2s ease;
+    animation: navLink 3s ease-in 1s infinite  normal forwards;
+}
+
+@keyframes navLink {
+    0%{
+        color: #606060;
+        border-bottom: 2px solid #606060;
+    }
+    25%{
+        color: #CC0066;
+        border-bottom: 2px solid #CC0066;
+    }
+    50% {
+        color: #CC00CC;
+        border-bottom: 2px solid #CC00CC;
+    }
+    75%{
+        color: #6600CC;
+        border-bottom: 2px solid #6600CC;
+    }
+    100% {
+        color: #0000CC;
+        border-bottom: 2px solid #0000CC;
+    }
+}
+
+header > nav a:hover {
+    font-size: 20px;
+}
+
