@@ -20,15 +20,6 @@ function addCircle(top, left, size) {
     header.appendChild(circle)
 }
 
-addCircle(-25, -10, 110)
-addCircle(-35, 80, 110)
-addCircle(-20, 170, 110)
-addCircle(-28, 260, 110)
-addCircle(-32, 350, 110)
-addCircle(-22, 440, 110)
-addCircle(-30, 530, 110)
-addCircle(-20, 610, 110)
-addCircle(-30, 700, 110)
-addCircle(-28, 790, 110)
-addCircle(-18, 880, 110)
-addCircle(-32, 970, 110)
+for(let i = 0; i < 15; i++){
+    addCircle(-25 + Math.floor(Math.random() * 21) + (-15) + (-5), -10 + (i * 90), 120)
+}
